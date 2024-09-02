@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f5; 
+    color: #202124; 
+}
+
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #1a73e8; 
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container h1 span {
+    color: #e3742f; 
+}
+
+.container p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #5f6368; 
+}
+
+.entradaDeConteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: none;
+}
+
+select, button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+}
+
+select {
+    background: #ffffff;
+    color: #202124; 
+}
+
+button {
+    background: #1a73e8; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #155ab1; 
+}
+
+.acoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.acaoBox {
+    flex: 1;
+    min-width: 250px;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.acaoBox p {
+    margin-bottom: 1rem;
+    color: #202124;
+}
+
+@media (max-width: 600px) {
+    .acoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acaoBox {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
